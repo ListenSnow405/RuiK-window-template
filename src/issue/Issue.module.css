@@ -1,0 +1,110 @@
+/* 整页的底色、字体写在最外层的类名上 */
+.page {
+  min-height: 100vh;
+  color: #1f2a37;
+  background: #fbfaf7;
+}
+
+/* 左上角有主站的返回按钮（距顶 16px、高 44px），顶部留够空间 */
+.hero {
+  padding: 120px 48px 64px;
+  color: #fff;
+  background: #1d3b5a;
+}
+
+.kicker,
+.title,
+.lead {
+  max-width: 720px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.kicker {
+  margin-bottom: 12px;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  opacity: 0.8;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: clamp(32px, 6vw, 56px);
+  line-height: 1.2;
+  color: inherit;
+}
+
+.lead {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.8;
+  opacity: 0.9;
+}
+
+.body {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 56px 24px;
+}
+
+.section h2 {
+  margin: 0 0 12px;
+  font-size: 26px;
+}
+
+.section p {
+  margin: 0 0 16px;
+  font-size: 17px;
+  line-height: 1.9;
+}
+
+.body > * + * {
+  margin-top: 48px;
+}
+
+.figure {
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+.imagePlaceholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+  color: #6b7785;
+  background: #e8e4da;
+}
+
+.figure figcaption {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #6b7785;
+}
+
+.footer {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 24px 24px 64px;
+  border-top: 1px solid #e3ded2;
+  font-size: 14px;
+  color: #6b7785;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 96px 16px 40px;
+  }
+
+  .body {
+    padding: 40px 16px;
+  }
+
+  .footer {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}

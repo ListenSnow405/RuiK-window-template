@@ -1,0 +1,18 @@
+/* 和主站仓库 apps/web/src/pages/window/IssuePage.module.css 的 .back 一样，主站改了这里跟着改 */
+.back {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 1000;
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  height: 44px;
+  padding: 0 18px 0 14px;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ant-color-text-base);
+  background: rgb(255 255 255 / 92%);
+  box-shadow: 0 2px 12px rgb(20 48 77 / 18%);
+}
